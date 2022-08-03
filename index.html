@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <main>
+      <figure>
+        <img src="assets/Ellipse1.png" alt="User Picture" />
+        <div class="profile">
+          <p class="uerName">Erik Dunlop</p>
+          <p class="userLoc">San Francisco, California</p>
+        </div>
+      </figure>
+           <!-- slider -->
+      <section class="slider-container">
+        <div class="swiper">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+              <!-- icon container -->
+      <section class="container">
+        <section class="icons-container">
+          <img id="likeIcon" src="assets/likeIcon.svg" alt="like icon" onclick="postLike()"/>
+          <img class="commentIcon" src="assets/commentIcon.svg" alt="Comment icon"/>
+          <img class="share-icon" src="assets/shareIcon.svg" alt="Share icon" />
+        </section>
+              <!-- comments container         -->
+        <section id="comments-container">
+          <p class="comment">
+            <b>Lucas Credie</b> dolor sit amet, consectetur adipiscing elit. Mi
+            enim ut eu cras ultrices eget et tristique proin. Mi enim ut eu cras
+            ultrices eget et tristique proin.
+          </p>
+          <p class="comment">
+            <b>Comment</b> consectetur adipiscing elit. Mi enim ut eu cras
+            ultrices eget et
+          </p>
+        </section>
+                <!-- form container -->
+        <form class="comment-form">
+          <input
+            id="input-comment"
+            type="text"
+            name="comment-value"
+            placeholder="Add a comment..."
+          />
+          <button id='button' type="submit" onclick="postComment()">Post</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
